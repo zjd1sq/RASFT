@@ -1,0 +1,3 @@
+eval/alpacaeval/src/alpaca_eval/evaluators_configs/weighted_alpaca_eval_gpt-4o-2024-08-06/annotations_seed0_configs.json filter=lfs diff=lfs merge=lfs -text
+eval/alpacaeval/src/alpaca_eval/evaluators_configs/weighted_alpaca_eval_gpt-4o-mini-2024-07-18/annotations_seed0_config.json filter=lfs diff=lfs merge=lfs -text
+math_evaluation/data/tabmwp/test.jsonl filter=lfs diff=lfs merge=lfs -text
