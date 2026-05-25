@@ -25,7 +25,7 @@ Comprehensive experiments demonstrate the effectiveness of RASFT on both mathema
 ## Installation
 
 ```bash
-git clone https://github.com/zhuchichi56/ASFT.git RASFT
+git clone https://github.com/zjd1sq/RASFT.git
 cd RASFT
 
 conda create -n rasft python=3.10
