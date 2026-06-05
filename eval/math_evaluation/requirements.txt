@@ -1,0 +1,24 @@
+# Core inference
+# Qwen3-8B model card requires vLLM >= 0.8.5
+vllm==0.8.5.post1
+transformers==4.51.3
+torch==2.6.0
+
+# General deps
+ray==2.43.0
+tqdm
+datasets
+numpy
+pandas
+matplotlib
+regex
+multiprocess
+python-dateutil
+
+# math_eval
+sympy==1.13.1
+antlr4-python3-runtime==4.7.2
+latex2sympy2==1.9.1
+word2number
+Pebble
+timeout-decorator

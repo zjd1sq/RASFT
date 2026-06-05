@@ -1,0 +1,13 @@
+numpy
+tqdm
+regex
+multiprocess==0.70.16
+python-dateutil
+
+# math_eval
+sympy==1.13.1
+antlr4-python3-runtime==4.7.2
+latex2sympy2==1.9.1
+word2number
+Pebble
+timeout-decorator

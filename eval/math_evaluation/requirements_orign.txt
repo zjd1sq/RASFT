@@ -1,0 +1,23 @@
+vllm==0.5.1
+transformers==4.42.3
+torch
+tqdm
+datasets
+ray==2.10.0
+numpy
+pandas
+matplotlib
+regex
+multiprocess
+python-dateutil
+
+# math_eval
+sympy==1.12
+antlr4-python3-runtime==4.7.2 # required by latex2sympy2
+latex2sympy2==1.9.1
+word2number
+Pebble
+timeout-decorator
+
+# optional (only needed for GPTQ models)
+# auto-gptq==0.7.1
