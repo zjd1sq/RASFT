@@ -1,27 +1,6 @@
 # RASFT: Rollout-Adaptive Supervised Fine-Tuning for Reasoning
 
 
-Conventional supervised fine-tuning and many SFT variants still optimize the model mainly toward expert demonstrations. Although expert data is useful for teaching new reasoning patterns, excessive imitation of fixed offline demonstrations may distort the model's original knowledge distribution, reduce generation diversity, and weaken generalization.
-
-We view this issue as an offline learning problem and propose **RASFT**, namely **Rollout-Adaptive Supervised Fine-Tuning for Reasoning**.
-
-For each selected training problem, RASFT performs sampling-based rollouts with the current policy model. The generated rollouts are automatically verified using task-specific correctness rules. Correct on-policy rollouts are then added to the training group of the corresponding problem, reducing the rigidity caused by purely offline expert imitation.
-
-RASFT also adaptively adjusts the learning strength of expert demonstrations according to the model's rollout correctness on each problem. For difficult problems with low rollout correctness, RASFT increases the expert-data learning weight, encouraging the model to quickly acquire new knowledge and reasoning skills. For easier problems with high rollout correctness, RASFT decreases the expert-data learning weight, avoiding unnecessary rigid imitation and better preserving the model's original capabilities.
-
-In addition, RASFT introduces an **inverse importance sampling ratio**. The original model is used as the reference model, while the trainable model is used as the policy model:
-
-$$
-\left(
-\frac{\pi_{\mathrm{ref}}(y_{i,j}\mid x_i)}
-{\pi_{\theta}(y_{i,j}\mid x_i)}
-\right)
-$$
-
-This ratio helps preserve useful knowledge from the original model and mitigates excessive deviation during offline learning.
-
-Comprehensive experiments demonstrate the effectiveness of RASFT on both mathematical reasoning and code reasoning tasks across five backbone models, including Qwen and Llama.
-
 ## Installation
 
 ```bash
